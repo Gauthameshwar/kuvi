@@ -14,7 +14,7 @@ The shared parameter CSV and latest previews are required exceptions: update the
 
 ## Dimensions and Geometry
 
-`scripts/parameters.csv` is the sole source of model dimensions, placements, fillets and fitting allowances. It belongs in `scripts/`, never `cad/`. Edit a named CSV entry rather than duplicating a physical dimension in Python. Scripts load it at runtime; do not add a competing defaults table or revision-specific parameter CSV. Mathematical ratios, indices, numerical kernel tolerances and rendering settings may remain in code.
+`scripts/parameters.csv` is the sole source of model dimensions, placements, fillets and fitting allowances. It belongs in `scripts/`. Edit a named CSV entry rather than duplicating a physical dimension in Python. Scripts load it at runtime; do not add a competing defaults table or revision-specific parameter CSV. Mathematical ratios, indices, numerical kernel tolerances and rendering settings may remain in code.
 
 The Python modules explain construction: shared primitives and document creation, enclosure/mounts, buttons, USB routing, and fasteners. Keep those responsibilities distinct. Historical `model.py` helpers inspect embedded snapshot geometry; the active helper also constructs the current model from the shared CSV. Each helper and README must explain its revision's purpose.
 

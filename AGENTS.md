@@ -6,7 +6,7 @@ Kuvi is a physical, serviceable robot. Prefer simple parts, accessible screws, r
 
 ## Revision Scope
 
-The current snapshot is `revisions/01-concept/`: the initial three-piece head and provisional component layout. Revision names describe their purpose. Unless explicitly requested, make model changes in this revision only and do not create minor version snapshots. Keep earlier revisions unchanged.
+The current snapshot is `revisions/02-serviceable/`: a front carrier and one rear casing with separately installed components. Revision names describe their purpose. Unless explicitly requested, make model changes in this revision only and do not create minor version snapshots. Keep earlier revisions unchanged.
 
 Each revision contains exactly `kuvi.FCStd`, `model.py`, and a brief `README.md`. Keep temporary files and FreeCAD backups elsewhere. The historical helper opens and inspects embedded solids; it does not reconstruct the design.
 

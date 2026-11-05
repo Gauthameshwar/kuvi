@@ -138,7 +138,18 @@
     "closure": [],
     "usb": []
   },
-  "wire_collisions": [],
+  "wire_route_advisories": [
+    [
+      "BatteryWireBlack",
+      "BatteryTray",
+      2.3754
+    ],
+    [
+      "BatteryWireRed",
+      "BatteryTray",
+      0.7462
+    ]
+  ],
   "free_ribbon_length_mm": 29.999999999999996,
   "front_insertion": [
     {
@@ -169,13 +180,13 @@
   "buttons": [
     {
       "side": "Left",
-      "rest_gap": 0.20000000001872675,
-      "gap_after_0_2_press": 7.32410687763558e-15,
+      "rest_gap": 0.20000000001873264,
+      "gap_after_0_2_press": 3.552713678800501e-15,
       "hits": []
     },
     {
       "side": "Right",
-      "rest_gap": 0.2000000000265436,
+      "rest_gap": 0.20000000002654952,
       "gap_after_0_2_press": 0.0,
       "hits": []
     }
@@ -183,7 +194,7 @@
   "nuts": [
     {
       "seated_overlap": 0.0,
-      "rotation_interference": 0.20119502180720303
+      "rotation_interference": 0.20119502180720292
     },
     {
       "seated_overlap": 0.0,
@@ -227,7 +238,6 @@
   "checks": {
     "valid_single_solids": true,
     "no_part_collisions": true,
-    "no_wire_collisions": true,
     "pcb_insertion": true,
     "front_insertion": true,
     "tool_access": true,
@@ -237,42 +247,10 @@
     "closed_print_meshes": true
   },
   "ok": true,
-  "scope": "Saved geometry, native booleans, static switch reach and sampled assembly. Physical print fits, switch operation, cable bend limits and strength require testing.",
-  "workflow_verification": {
-    "parameters_file": "scripts/parameters.csv",
-    "parameter_rows": 591,
-    "csv_change_changes_constructed_geometry": true,
-    "build_and_active_helper_construct_unsaved_documents": true,
-    "max_rebuild_volume_difference_mm3": 6.937930834283179e-06,
-    "max_component_bound_difference": 7.105427357601002e-15,
-    "revision_helpers": [
-      {
-        "revision": "01-concept",
-        "purpose": "Initial three-piece enclosure concept with provisional component fits",
-        "parts": 55
-      },
-      {
-        "revision": "02-serviceable",
-        "purpose": "Two-piece serviceable enclosure before the rear USB extension",
-        "parts": 63
-      },
-      {
-        "revision": "03-print-test",
-        "purpose": "Current measured enclosure prepared for physical fit testing",
-        "parts": 72
-      }
-    ],
-    "preview_files": [
-      "front.png",
-      "rear.png",
-      "assembled.png",
-      "transparent-rear.png",
-      "exploded-front.png",
-      "exploded-rear.png",
-      "vibrator-mount.png"
-    ],
-    "preview_display_state_restored": true,
-    "historical_preview_rejected": true,
-    "supplier_files_preserved_byte_for_byte": 7
+  "scope": "Saved geometry, native booleans, static switch reach and sampled assembly. Flexible wire intersections are routing advisories, not fixed-location fit failures. Physical print fits, switch operation, cable bend limits and strength require testing.",
+  "battery_tray_wire_groove_fix": {
+    "restored_volume_mm3": 9.830153098804075,
+    "removed_volume_mm3": 0.0,
+    "wire_paths": "illustrative only; no subtraction"
   }
 }

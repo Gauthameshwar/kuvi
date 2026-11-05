@@ -6,7 +6,7 @@
     "objects": 59,
     "solids": 713,
     "valid": true,
-    "relative_volume_difference": 0.00013884989887502064,
+    "relative_volume_difference": 0.00013882072767420887,
     "max_bounds_difference_mm": 2.1316282072803006e-13
   },
   "printables": {
@@ -15,11 +15,11 @@
       "closed": true
     },
     "RearCasing": {
-      "triangles": 84058,
+      "triangles": 84020,
       "closed": true
     },
     "BatteryTray": {
-      "triangles": 26278,
+      "triangles": 24820,
       "closed": true
     },
     "SpeakerKeeper": {
@@ -35,11 +35,11 @@
       "closed": true
     },
     "ButtonCapLeft": {
-      "triangles": 1910,
+      "triangles": 1944,
       "closed": true
     },
     "ButtonCapRight": {
-      "triangles": 1940,
+      "triangles": 1950,
       "closed": true
     }
   }

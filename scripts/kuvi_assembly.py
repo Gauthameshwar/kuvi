@@ -235,7 +235,7 @@ def geometry(p):
     for off, color in ((-0.65, 'Black'), (0.65, 'Red')):
         bp = [(p['BatteryWireBend1X'], p['AssemblyBpValue'], cz - p['AssemblyBpValue2']), (p['BatteryWireBend2X'], p['BatteryWireBend2Y'], cz - p['AssemblyBpValue2']), (p['BatteryWireBend3X'], p['BatteryWireBend3Y'], bz + bh - 2), (p['BatteryWireBend4X'], p['BatteryWireBend4Y'], bz + bh - 1), (-bl / 2 - p['AssemblyBpValue3'], by + bt / 2, bz + bh + p['AssemblyBpValue4'])]
         wires['BatteryWire' + color] = tube_path([(x, y + off, z + off) for x, y, z in bp], 1 / 2)
-        tray = tray.cut(tube_path([(x, y + off, z + off) for x, y, z in bp], p['AssemblyTrayRadius2'])).removeSplitter()
+        # Flexible leads are illustrative; never carve their route into the tray.
         sp = [(p['SpeakerWireBend1X'], p['AssemblySpValue'], cz + p['AssemblySpValue2']), (-p['AssemblySpValue3'], p['SpeakerWireBend2Y'], cz + 8), (p['SpeakerWireBend3X'], p['SpeakerWireBend3Y'], cz + 7), (p['SpeakerWireBend4X'], p['SpeakerWireBend4Y'], cz + 1), (p['SpeakerWireBend5X'], p['AssemblySpValue4'], sz), (-p['AssemblySpValue5'], p['AssemblySpValue6'], sz), (-sw / 2 - p['AssemblySpValue7'], sy + sr + st / 2, sz)]
         wires['SpeakerWire' + color] = tube_path([(x, y + off, z + off) for x, y, z in sp], 1 / 2)
     for i, off in enumerate((-2.54, 0, 2.54), 1):

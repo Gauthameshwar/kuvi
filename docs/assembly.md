@@ -12,7 +12,7 @@
 
 Use the ready-made STL files in [exports/printables](../exports/printables/). The eight printed solids are: `FrontCarrier`, `RearCasing`, `BatteryTray`, `SpeakerKeeper`, `ButtonLeft`, `ButtonRight`, `ButtonCapLeft`, `ButtonCapRight`.
 
-Reference electronics, wires, screws and nuts are not print parts. Battery pads/strap and the vibrator anti-rattle pad represent soft material, not rigid printed pieces.
+Reference electronics, wires, screws and nuts are not print parts. Flexible wire paths are illustrative: route the actual leads during assembly. 
 
 Before printing the enclosure, choose the printer, nozzle, material and layer settings. Print small screw-boss, stem/socket, mating-lip and speaker-clip coupons. Then check the slicer's supports, wall coverage and mesh warnings for each part. No production G-code is provided.
 

@@ -529,7 +529,6 @@ Construction details,AssemblyLowerLipDepth,1,Assembly lower_lip: Depth
 Construction details,AssemblyLowerLipHeight,1,Assembly lower_lip: Height
 Construction details,AssemblyLowerLipX,13,Assembly lower_lip: X
 Construction details,AssemblyLowerLipZ,1,Assembly lower_lip: Z
-Construction details,AssemblyTrayRadius2,0.9,Assembly tray: Radius
 Vibrator,HapticPCBLength,23,"Assembly (hx, hd): scalar"
 Vibrator,HapticPCBWidth,21,"Assembly (hx, hd): scalar"
 Vibrator,HapticHoleEdgeOffset,2.8,Assembly hole_x: scalar

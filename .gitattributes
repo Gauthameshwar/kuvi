@@ -1,0 +1,7 @@
+# CAD and mesh assets should be preserved byte-for-byte, without text diffs.
+*.FCStd binary
+*.FCBak binary
+*.step binary
+*.stp binary
+*.stl binary
+*.dwg binary

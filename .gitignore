@@ -9,5 +9,3 @@ __pycache__/
 .venv/
 firmware/build/
 firmware/.pio/
-
-exports/

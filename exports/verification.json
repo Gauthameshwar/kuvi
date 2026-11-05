@@ -1,0 +1,46 @@
+{
+  "source": "revisions/03-print-test/kuvi.FCStd",
+  "units": "mm",
+  "step": {
+    "file": "kuvi.step",
+    "objects": 59,
+    "solids": 713,
+    "valid": true,
+    "relative_volume_difference": 0.00013884989887502064,
+    "max_bounds_difference_mm": 2.1316282072803006e-13
+  },
+  "printables": {
+    "FrontCarrier": {
+      "triangles": 16052,
+      "closed": true
+    },
+    "RearCasing": {
+      "triangles": 84058,
+      "closed": true
+    },
+    "BatteryTray": {
+      "triangles": 26278,
+      "closed": true
+    },
+    "SpeakerKeeper": {
+      "triangles": 1132,
+      "closed": true
+    },
+    "ButtonLeft": {
+      "triangles": 1004,
+      "closed": true
+    },
+    "ButtonRight": {
+      "triangles": 1004,
+      "closed": true
+    },
+    "ButtonCapLeft": {
+      "triangles": 1910,
+      "closed": true
+    },
+    "ButtonCapRight": {
+      "triangles": 1940,
+      "closed": true
+    }
+  }
+}

@@ -10,7 +10,7 @@
 
 ## Print parts
 
-Export these eight solids individually from FreeCAD: `FrontCarrier`, `RearCasing`, `BatteryTray`, `SpeakerKeeper`, `ButtonLeft`, `ButtonRight`, `ButtonCapLeft`, `ButtonCapRight`.
+Use the ready-made STL files in [exports/printables](../exports/printables/). The eight printed solids are: `FrontCarrier`, `RearCasing`, `BatteryTray`, `SpeakerKeeper`, `ButtonLeft`, `ButtonRight`, `ButtonCapLeft`, `ButtonCapRight`.
 
 Reference electronics, wires, screws and nuts are not print parts. Battery pads/strap and the vibrator anti-rattle pad represent soft material, not rigid printed pieces.
 

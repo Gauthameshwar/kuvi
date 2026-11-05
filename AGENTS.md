@@ -26,5 +26,6 @@ Use actual FreeCAD tools and saved geometry. Never simulate success. Rebuild and
 
 `previews/` contains only the latest reviewed model. Refresh it after visual changes. Include front-angled and rear-angled exploded views and a rear-side angled transparent view. Restore all placements, visibility, transparency and camera state after capture; never save an exploded assembly as the CAD model.
 
+`exports/` holds only the latest reviewed STEP assembly, eight printable STLs, a brief README and export verification. Refresh these through `scripts/export_model.py` after approving geometry changes. Exclude construction envelopes from STEP and purchased components from printables. STEP supports solid editing without carrying FreeCAD feature history.
 
 Fit checks do not certify printer tolerances, switch operation or physical strength. Keep those limitations brief and specific. Explain what changed and what was verified.

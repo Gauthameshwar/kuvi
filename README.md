@@ -6,6 +6,12 @@ Kuvi is a small desktop robot built around the Waveshare ESP32-S3-Touch-AMOLED-1
 
 The enclosure is ready for a fit-test print. Printer/material settings and physical fits have not yet been verified.
 
+## Ready-to-use files
+
+- [STEP assembly](exports/kuvi.step): separate solid parts for editing in other CAD tools.
+- [Printable STL parts](exports/printables/): eight parts, in millimetres.
+- [Export instructions](exports/README.md): format details and print preparation.
+
 ## Where to start
 
 - [Assembly and print testing](docs/assembly.md)
@@ -34,6 +40,6 @@ Validation checks saved geometry without rebuilding or altering it, and returns 
 
 `scripts/parameters.csv` is the source of truth for dimensions, positions and fit allowances. Geometry scripts read it at runtime.
 
-`scripts/` contains five geometry modules, one opening macro, one validator and one capture tool. `references/` holds original supplier files, part photos and sketches. Detailed screw geometry is generated from the CSV as well. `firmware/src/` is reserved for future firmware.
+`scripts/` contains five geometry modules, one opening macro, one validator, one capture tool and one exporter. `references/` holds original supplier files, part photos and sketches. Detailed screw geometry is generated from the CSV as well. `firmware/src/` is reserved for future firmware.
 
 [AGENTS.md](AGENTS.md) defines revision scope, parameter ownership and verification rules.

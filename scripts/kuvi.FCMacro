@@ -1,0 +1,9 @@
+# Open the reviewed print-test model. Rebuild and validation commands are in README.md.
+from pathlib import Path
+import sys
+import FreeCADGui as Gui
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import kuvi_model
+kuvi_model.open_model()
+Gui.activeDocument().activeView().viewAxonometric()
+Gui.activeDocument().activeView().fitAll()

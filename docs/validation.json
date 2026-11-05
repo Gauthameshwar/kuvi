@@ -1,0 +1,278 @@
+{
+  "revision": "print-test",
+  "solids": {
+    "FrontCarrier": {
+      "valid": true,
+      "count": 1
+    },
+    "RearCasing": {
+      "valid": true,
+      "count": 1
+    },
+    "BatteryTray": {
+      "valid": true,
+      "count": 1
+    },
+    "SpeakerKeeper": {
+      "valid": true,
+      "count": 1
+    },
+    "ButtonLeft": {
+      "valid": true,
+      "count": 1
+    },
+    "ButtonRight": {
+      "valid": true,
+      "count": 1
+    },
+    "ButtonCapLeft": {
+      "valid": true,
+      "count": 1
+    },
+    "ButtonCapRight": {
+      "valid": true,
+      "count": 1
+    },
+    "BoardScrew1": {
+      "valid": true,
+      "count": 1
+    },
+    "BoardScrew2": {
+      "valid": true,
+      "count": 1
+    },
+    "BoardScrew3": {
+      "valid": true,
+      "count": 1
+    },
+    "BatteryMountScrew1": {
+      "valid": true,
+      "count": 1
+    },
+    "BatteryMountScrew2": {
+      "valid": true,
+      "count": 1
+    },
+    "BatteryMountScrew3": {
+      "valid": true,
+      "count": 1
+    },
+    "ClosureScrew1": {
+      "valid": true,
+      "count": 1
+    },
+    "ClosureScrew2": {
+      "valid": true,
+      "count": 1
+    },
+    "HapticScrew1": {
+      "valid": true,
+      "count": 1
+    },
+    "USBMountScrew1": {
+      "valid": true,
+      "count": 1
+    },
+    "USBMountScrew2": {
+      "valid": true,
+      "count": 1
+    }
+  },
+  "collisions": [],
+  "slider_samples": [
+    {
+      "dy": -50,
+      "front_up_degrees": 0,
+      "hits": []
+    },
+    {
+      "dy": -40,
+      "front_up_degrees": 0,
+      "hits": []
+    },
+    {
+      "dy": -30,
+      "front_up_degrees": 0,
+      "hits": []
+    },
+    {
+      "dy": -20,
+      "front_up_degrees": 0,
+      "hits": []
+    },
+    {
+      "dy": -15,
+      "front_up_degrees": 0,
+      "hits": []
+    },
+    {
+      "dy": -10,
+      "front_up_degrees": 0,
+      "hits": []
+    },
+    {
+      "dy": -5,
+      "front_up_degrees": 0,
+      "hits": []
+    },
+    {
+      "dy": -2,
+      "front_up_degrees": 0,
+      "hits": []
+    },
+    {
+      "dy": -1,
+      "front_up_degrees": 0,
+      "hits": []
+    },
+    {
+      "dy": 0,
+      "front_up_degrees": 0,
+      "hits": []
+    }
+  ],
+  "tool_access": {
+    "board_before_tray": [],
+    "battery_before_closure": [],
+    "haptic_L_key_front_open": [],
+    "closure": [],
+    "usb": []
+  },
+  "wire_collisions": [],
+  "free_ribbon_length_mm": 29.999999999999996,
+  "front_insertion": [
+    {
+      "offset": -15,
+      "hits": []
+    },
+    {
+      "offset": -10,
+      "hits": []
+    },
+    {
+      "offset": -5,
+      "hits": []
+    },
+    {
+      "offset": -3,
+      "hits": []
+    },
+    {
+      "offset": -1,
+      "hits": []
+    },
+    {
+      "offset": 0,
+      "hits": []
+    }
+  ],
+  "buttons": [
+    {
+      "side": "Left",
+      "rest_gap": 0.20000000001872675,
+      "gap_after_0_2_press": 7.32410687763558e-15,
+      "hits": []
+    },
+    {
+      "side": "Right",
+      "rest_gap": 0.2000000000265436,
+      "gap_after_0_2_press": 0.0,
+      "hits": []
+    }
+  ],
+  "nuts": [
+    {
+      "seated_overlap": 0.0,
+      "rotation_interference": 0.20119502180720303
+    },
+    {
+      "seated_overlap": 0.0,
+      "rotation_interference": 0.20119502180720034
+    }
+  ],
+  "meshes": {
+    "FrontCarrier": {
+      "closed": true,
+      "nonmanifold": false
+    },
+    "RearCasing": {
+      "closed": true,
+      "nonmanifold": false
+    },
+    "BatteryTray": {
+      "closed": true,
+      "nonmanifold": false
+    },
+    "SpeakerKeeper": {
+      "closed": true,
+      "nonmanifold": false
+    },
+    "ButtonLeft": {
+      "closed": true,
+      "nonmanifold": false
+    },
+    "ButtonRight": {
+      "closed": true,
+      "nonmanifold": false
+    },
+    "ButtonCapLeft": {
+      "closed": true,
+      "nonmanifold": false
+    },
+    "ButtonCapRight": {
+      "closed": true,
+      "nonmanifold": false
+    }
+  },
+  "checks": {
+    "valid_single_solids": true,
+    "no_part_collisions": true,
+    "no_wire_collisions": true,
+    "pcb_insertion": true,
+    "front_insertion": true,
+    "tool_access": true,
+    "button_reach": true,
+    "nut_fit": true,
+    "ribbon_length": true,
+    "closed_print_meshes": true
+  },
+  "ok": true,
+  "scope": "Saved geometry, native booleans, static switch reach and sampled assembly. Physical print fits, switch operation, cable bend limits and strength require testing.",
+  "workflow_verification": {
+    "parameters_file": "scripts/parameters.csv",
+    "parameter_rows": 591,
+    "csv_change_changes_constructed_geometry": true,
+    "build_and_active_helper_construct_unsaved_documents": true,
+    "max_rebuild_volume_difference_mm3": 6.937930834283179e-06,
+    "max_component_bound_difference": 7.105427357601002e-15,
+    "revision_helpers": [
+      {
+        "revision": "01-concept",
+        "purpose": "Initial three-piece enclosure concept with provisional component fits",
+        "parts": 55
+      },
+      {
+        "revision": "02-serviceable",
+        "purpose": "Two-piece serviceable enclosure before the rear USB extension",
+        "parts": 63
+      },
+      {
+        "revision": "03-print-test",
+        "purpose": "Current measured enclosure prepared for physical fit testing",
+        "parts": 72
+      }
+    ],
+    "preview_files": [
+      "front.png",
+      "rear.png",
+      "assembled.png",
+      "transparent-rear.png",
+      "exploded-front.png",
+      "exploded-rear.png",
+      "vibrator-mount.png"
+    ],
+    "preview_display_state_restored": true,
+    "historical_preview_rejected": true,
+    "supplier_files_preserved_byte_for_byte": 7
+  }
+}

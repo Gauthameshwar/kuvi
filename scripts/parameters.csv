@@ -1,0 +1,592 @@
+Group,Parameter,Value,Meaning
+Enclosure and reference geometry,HeadRadius,37.5,Compact spherical shell radius
+Enclosure and reference geometry,HeadCenterY,18,Compact shell centre behind glass
+Enclosure and reference geometry,CenterZ,34,Display and shell centre height above desk
+Enclosure and reference geometry,Wall,2,Nominal axial shell offset; local normal thickness audited
+Enclosure and reference geometry,FrontSplit,5,Two-piece front/rear seam Y; direct front closure screw access
+Enclosure and reference geometry,SeamGap,0.25,Visible axial seam clearance
+Enclosure and reference geometry,LipClearance,0.35,Per-side mating clearance; 3 mm alignment overlap retained
+Enclosure and reference geometry,LipDepth,3,Alignment overlap
+Enclosure and reference geometry,GlassRadius,24.48,Verified STEP vertices/tessellation and PDF diameter 48.96
+Enclosure and reference geometry,GlassClearance,0.3,Radial glass clearance
+Battery,BatteryRetainerGap,1,Non-compressing thickness allowance
+Speaker,SpeakerWidth,20.2,Short side of photographed rectangular speaker
+Speaker,SpeakerThickness,7.1,User measured thickness
+Speaker,SpeakerRecess,0.3,Speaker front face recessed behind keeper mounting plane
+Speaker,SpeakerClearance,0.25,"Per-side mounting clearance, provisional"
+Speaker,SpeakerCavityDepth,7.55,0.3 front recess plus 7.1 housing plus 0.15 axial allowance
+Speaker,SpeakerY,38,Speaker rear-directed axis start
+Speaker,SpeakerZ,34,Speaker centre height
+Enclosure and reference geometry,GrilleDiameter,2.4,"Acoustic hole diameter, provisional"
+Enclosure and reference geometry,GrillePitch,3.8,Reference 21-hole pattern spacing
+Vibrator,HapticY,38,"PCB centre, front to rear"
+Vibrator,HapticZ,8.300000000000001,PCB underside on integral floor
+Enclosure and reference geometry,PilotDiameter,1.6,Provisional plastic screw pilot; print coupon required
+Speaker,SpeakerLength,30.25,Long side of photographed speaker
+Speaker,SpeakerCornerRadius,5,User-selected outline radius
+Speaker,SpeakerRimRadius,0.25,"Small front/back rim rounding, provisional"
+Battery,BatteryTapeLength,6,Visual tape band included in the measured wrapped length
+Vibrator,HapticPCBThickness,1.2,Measured PCB thickness
+Speaker,SpeakerHorizontal,1,1: long side horizontal; 0: long side vertical
+Enclosure and reference geometry,GrilleRimRadius,0.3,Soft outer mouths on 21 radial speaker holes
+Enclosure and reference geometry,ClosureRadius,30.08321791298265,Symmetric front closure screw radius
+Enclosure and reference geometry,ClosureScrewLength,8,Plastic closure screw length under head
+Battery,BatteryMountX,28.5,Tray mounting screws outboard of cell and strap
+Battery,BatteryMountScrewLength,8,Plastic tray screw length under head
+Speaker,SpeakerClipThickness,0.8,Replaceable clip beam; material/print test required
+Speaker,SpeakerClipClearance,0.3,Provisional clip slot clearance
+Speaker,SpeakerClipHook,0.4,Nominal elastic clip deflection / engagement
+Enclosure and reference geometry,DriverShaftReach,42,Straight shaft length before handle
+Enclosure and reference geometry,DriverHandleDiameter,18,Illustrative precision screwdriver handle diameter
+USB,USBWireWidth,7.5,Supplier image
+USB,USBWireThickness,1.5,Supplier image
+USB,USBBendRadius,3,Routing-study centreline radius only; supplier minimum unknown
+USB,USBFemaleDepth,26.5,Measured socket face to free ribbon
+USB,USBFemaleWidth,20.2,Supplier mounting plate width
+USB,USBFemaleHeight,6.8,Supplier mounting plate height
+USB,USBFemaleHolePitch,16,Supplier mounting hole spacing
+USB,USBFemaleHoleDiameter,2.2,Supplier says diameter 2 mm+; 2.2 provisional
+USB,USBFemaleY,53,"Rear-facing socket mouth, within old envelope"
+USB,USBFemaleZ,16.75,Rear socket centre height
+Battery,BatteryTopMountZ,64.7,Upper battery tray screw height
+Enclosure and reference geometry,WaveshareYOffset,2.77,Supplied STEP to model Y translation
+Fasteners,ScrewDiameter,2,Screw geometry; thread profiles and unspecified drives are estimates
+Fasteners,PlasticHeadDiameter,3.98,Screw geometry; thread profiles and unspecified drives are estimates
+Fasteners,PlasticHeadHeight,2,Screw geometry; thread profiles and unspecified drives are estimates
+Fasteners,PlasticThreadPitch,0.8,Screw geometry; thread profiles and unspecified drives are estimates
+Fasteners,PlasticRootRadius,0.65,Screw geometry; thread profiles and unspecified drives are estimates
+Fasteners,PlasticTipLength,1.2,Screw geometry; thread profiles and unspecified drives are estimates
+Fasteners,PlasticHexAcrossFlats,1.5,Screw geometry; thread profiles and unspecified drives are estimates
+Fasteners,PlasticSocketDepth,1.1,Screw geometry; thread profiles and unspecified drives are estimates
+Fasteners,BoardHeadDiameter,3.5,Screw geometry; thread profiles and unspecified drives are estimates
+Fasteners,BoardHeadHeight,1.5,Screw geometry; thread profiles and unspecified drives are estimates
+Fasteners,MachineThreadPitch,0.4,Screw geometry; thread profiles and unspecified drives are estimates
+Fasteners,MachineRootRadius,0.76,Screw geometry; thread profiles and unspecified drives are estimates
+USB,USBHeadDiameter,3.8,Screw geometry; thread profiles and unspecified drives are estimates
+USB,USBHeadHeight,1.3,Screw geometry; thread profiles and unspecified drives are estimates
+Fasteners,MachineDriveWidth,0.65,Screw geometry; thread profiles and unspecified drives are estimates
+Fasteners,MachineDriveLength,2.5,Screw geometry; thread profiles and unspecified drives are estimates
+Fasteners,MachineDriveDepth,0.8,Screw geometry; thread profiles and unspecified drives are estimates
+Buttons,EarAxisX,0.5591930000000001,Actuator X direction cosine (dimensionless)
+Buttons,EarAxisZ,0.8290380000000001,Actuator Z direction cosine (dimensionless)
+Buttons,EarGuideRadius,3.9,Ear guide: Radius
+Buttons,EarGuideLength,1.6,Ear guide: Length
+Buttons,EarGuideZ,2,Ear guide: Z
+Buttons,EarBoreRadius,1.8,Ear bore: Radius
+Buttons,EarBoreLength,3,Ear bore: Length
+Buttons,EarBoreZ,1,Ear bore: Z
+Buttons,EarFlangePocketRadius,3.1,Ear flange_pocket: Radius
+Buttons,EarFlangePocketLength,2.6,Ear flange_pocket: Length
+Buttons,EarFlangePocketZ,0.2,Ear flange_pocket: Z
+Buttons,EarStemLength,2.7,Ear stem: Length
+Buttons,EarCapWidth,20,Ear cap: Width
+Buttons,EarCapDepth,20,Ear cap: Depth
+Buttons,EarCapHeight,7,Ear cap: Height
+Buttons,EarCapX,10,Ear cap: X
+Buttons,EarCapY,10,Ear cap: Y
+Buttons,EarScoopRadiusX,3.7,Ear scoop: RadiusX
+Buttons,EarScoopRadiusY,1.1,Ear scoop: RadiusY
+Buttons,EarScoopRadiusZ,2.6,Ear scoop: RadiusZ
+Buttons,EarScoopCentre,3.4,Ear scoop: Centre
+Buttons,EarScoopCentre2,1.1,Ear scoop: Centre
+Buttons,EarCapZ,0.01,Ear cap: Z
+Buttons,EarPlaceZ,1,Ear place: Z
+USB,USBStartValue,22,USB start: scalar
+USB,USBBValue,20,USB b: scalar
+USB,USBExposedValue,30,USB exposed: scalar
+USB,USBZValue,4.75,USB z: scalar
+USB,USBMaleWidth,10,USB male: Width
+USB,USBMaleDepth,6,USB male: Depth
+USB,USBMaleHeight,6,USB male: Height
+USB,USBMaleX,5,USB male: X
+USB,USBMaleY,6.07,USB male: Y
+USB,USBMaleZ,4,USB male: Z
+USB,USBMaleFillet,0.6,USB male: Fillet
+USB,USBBladeWidth,8.199999999999999,USB blade: Width
+USB,USBBladeDepth,2.4,USB blade: Depth
+USB,USBBladeHeight,4,USB blade: Height
+USB,USBBladeX,4.1,USB blade: X
+USB,USBBladeY,6.87,USB blade: Y
+USB,USBBladeZ,10,USB blade: Z
+USB,USBBladeCornerRadius,1,USB blade: CornerRadius
+USB,USBPlateDepth,1.6,USB plate: Depth
+USB,USBPlateY,1.6,USB plate: Y
+USB,USBBodyWidth,11,USB body: Width
+USB,USBBodyDepth,11.6,USB body: Depth
+USB,USBBodyHeight,6.8,USB body: Height
+USB,USBBodyX,5.5,USB body: X
+USB,USBBodyY,10,USB body: Y
+USB,USBBodyZ,3.4,USB body: Z
+USB,USBBodyCornerRadius,1,USB body: CornerRadius
+USB,USBMouthWidth,9.199999999999999,USB mouth: Width
+USB,USBMouthDepth,8,USB mouth: Depth
+USB,USBMouthHeight,3.5,USB mouth: Height
+USB,USBMouthX,4.6,USB mouth: X
+USB,USBMouthY,7.9,USB mouth: Y
+USB,USBMouthZ,1.75,USB mouth: Z
+USB,USBMouthCornerRadius,1.7,USB mouth: CornerRadius
+USB,USBLandWidth,25,USB land: Width
+USB,USBLandDepth,9,USB land: Depth
+USB,USBLandHeight,10.7,USB land: Height
+USB,USBLandX,12.5,USB land: X
+USB,USBLandY,9,USB land: Y
+USB,USBLandZ,5.35,USB land: Z
+USB,USBLandCornerRadius,2,USB land: CornerRadius
+USB,USBChannelWidth,11.6,USB channel: Width
+USB,USBChannelDepth,2,USB channel: Depth
+USB,USBChannelHeight,7.3,USB channel: Height
+USB,USBChannelX,5.8,USB channel: X
+USB,USBChannelY,0.5,USB channel: Y
+USB,USBChannelZ,3.65,USB channel: Z
+USB,USBChannelCornerRadius,1.2,USB channel: CornerRadius
+USB,USBRecessWidth,20.8,USB recess: Width
+USB,USBRecessDepth,3,USB recess: Depth
+USB,USBRecessHeight,7.4,USB recess: Height
+USB,USBRecessX,10.4,USB recess: X
+USB,USBRecessY,1.6,USB recess: Y
+USB,USBRecessZ,3.7,USB recess: Z
+USB,USBRecessCornerRadius,0.3,USB recess: CornerRadius
+USB,USBPartsWidth,10,USB parts: Width
+USB,USBPartsDepth,10,USB parts: Depth
+USB,USBPartsHeight,3,USB parts: Height
+USB,USBPartsX,5,USB parts: X
+USB,USBPartsY,12,USB parts: Y
+USB,USBPartsZ,4,USB parts: Z
+USB,USBPartsZ2,1.5,USB parts: Z
+USB,USBBoreLength,12,USB bore: Length
+USB,USBBoreY,10,USB bore: Y
+USB,USBPointsX,2.31,USB points: X
+USB,USBPointsY,6.3,USB points: Y
+USB,USBPointsZ,2.31,USB points: Z
+USB,USBNutRadius,1,USB nut: Radius
+USB,USBNutLength,2,USB nut: Length
+USB,USBNutY,6.5,USB nut: Y
+USB,USBPocketPointsX,4.4,USB pocket_points: X
+USB,USBPocketPointsX2,3,USB pocket_points: X
+USB,USBPocketPointsY,10,USB pocket_points: Y
+USB,USBPocketPointsZ,4.4,USB pocket_points: Z
+USB,USBPocketPointsZ2,3,USB pocket_points: Z
+USB,USBPocketY,5.3,USB pocket: Y
+USB,USBPartsUsbmountscrewStrILength,8,USB parts[USBMountScrew + str(i): Length
+USB,USBPartsUsbmountscrewStrIAxis,1,USB parts[USBMountScrew + str(i): Axis
+USB,USBPartsUsbtoolenvelopeStrIValue,1.3,USB parts[USBToolEnvelope + str(i): scalar
+Construction details,AssemblyBaseWidth,70,Assembly base: Width
+Construction details,AssemblyBaseDepth,49,Assembly base: Depth
+Construction details,AssemblyBaseHeight,32,Assembly base: Height
+Construction details,AssemblyBaseX,35,Assembly base: X
+Construction details,AssemblyBaseY,3,Assembly base: Y
+Construction details,AssemblyBaseFillet,8,Assembly base: Fillet
+Construction details,AssemblyMergedRadius,3,Assembly merged: Radius
+Construction details,AssemblyHandleLength,30,Assembly handle: Length
+Construction details,AssemblyClipWidth,200,Assembly clip: Width
+Construction details,AssemblyClipDepth,140,Assembly clip: Depth
+Construction details,AssemblyClipHeight,150,Assembly clip: Height
+Construction details,AssemblyClipX,100,Assembly clip: X
+Construction details,AssemblyClipY,0.8,Assembly clip: Y
+Construction details,AssemblyFrontWidth,200,Assembly front: Width
+Construction details,AssemblyFrontDepth,0.8,Assembly front: Depth
+Construction details,AssemblyFrontHeight,150,Assembly front: Height
+Construction details,AssemblyFrontX,100,Assembly front: X
+Construction details,AssemblyFrontY,0.8,Assembly front: Y
+Construction details,AssemblyRearWidth,200,Assembly rear: Width
+Construction details,AssemblyRearDepth,100,Assembly rear: Depth
+Construction details,AssemblyRearHeight,150,Assembly rear: Height
+Construction details,AssemblyRearX,100,Assembly rear: X
+Construction details,AssemblyApertureLength,14,Assembly aperture: Length
+Construction details,AssemblyApertureY,2,Assembly aperture: Y
+Construction details,AssemblyFasciaWidth,200,Assembly fascia: Width
+Construction details,AssemblyFasciaDepth,2,Assembly fascia: Depth
+Construction details,AssemblyFasciaHeight,150,Assembly fascia: Height
+Construction details,AssemblyFasciaX,100,Assembly fascia: X
+Construction details,AssemblyFasciaY,0.8,Assembly fascia: Y
+Construction details,AssemblyMountsValue,14.7,Assembly mounts: scalar
+Construction details,AssemblyMountsValue2,13.75,Assembly mounts: scalar
+Construction details,AssemblyMountsValue3,20.5,Assembly mounts: scalar
+Construction details,AssemblyStemRadius,1.8,Assembly stem: Radius
+Construction details,AssemblyStemLength,11.8,Assembly stem: Length
+Construction details,AssemblyStemY,0.6,Assembly stem: Y
+Construction details,AssemblyLugY,10.4,Assembly lug: Y
+Construction details,AssemblyLugEndRadius,27,Assembly lug: EndRadius
+Construction details,AssemblyLugDepth,2.5,Assembly lug: Depth
+Construction details,AssemblyLugRadius,1.15,Assembly lug: Radius
+Construction details,AssemblyLugLength,5,Assembly lug: Length
+Construction details,AssemblyLugY2,9,Assembly lug: Y
+Construction details,AssemblyY,12.9,Assembly geometry: Y
+Construction details,AssemblyLength,4.5,Assembly geometry: Length
+Construction details,AssemblyDiameter,2,Assembly geometry: Diameter
+Construction details,AssemblyEnvelopesBoardtoolenvelopeStrIValue,14.4,Assembly envelopes[BoardToolEnvelope + str(i): scalar
+Construction details,AssemblyLipOuterLength,110,Assembly lip_outer: Length
+Construction details,AssemblyLipOuterY,10,Assembly lip_outer: Y
+Construction details,AssemblyLipInnerRadius,1.6,Assembly lip_inner: Radius
+Construction details,AssemblyLipInnerLength,110,Assembly lip_inner: Length
+Construction details,AssemblyLipInnerY,10,Assembly lip_inner: Y
+Construction details,AssemblyLipWidth,200,Assembly lip: Width
+Construction details,AssemblyLipDepth,0.7,Assembly lip: Depth
+Construction details,AssemblyLipHeight,150,Assembly lip: Height
+Construction details,AssemblyLipX,100,Assembly lip: X
+Construction details,AssemblyLipY,0.7,Assembly lip: Y
+Construction details,AssemblyLipDepth2,20,Assembly lip: Depth
+Construction details,AssemblyLipHeight2,22,Assembly lip: Height
+Construction details,AssemblyLipY2,1,Assembly lip: Y
+Construction details,AssemblyLandWidth,200,Assembly land: Width
+Construction details,AssemblyLandDepth,0.7,Assembly land: Depth
+Construction details,AssemblyLandHeight,150,Assembly land: Height
+Construction details,AssemblyLandX,100,Assembly land: X
+Construction details,AssemblyLandY,0.7,Assembly land: Y
+Construction details,AssemblyLandDepth2,20,Assembly land: Depth
+Construction details,AssemblyLandHeight2,22,Assembly land: Height
+Construction details,AssemblyLandY2,1,Assembly land: Y
+Construction details,AssemblyFrontRadius,3.3,Assembly front: Radius
+Construction details,AssemblyFrontLength,0.6,Assembly front: Length
+Construction details,AssemblyFrontY2,0.6,Assembly front: Y
+Construction details,AssemblyFrontRadius2,2.3,Assembly front: Radius
+Construction details,AssemblyFrontLength2,3.2,Assembly front: Length
+Construction details,AssemblyFrontY3,2,Assembly front: Y
+Construction details,AssemblyBossLength,4.5,Assembly boss: Length
+Construction details,AssemblyClearanceRadius,3.6,Assembly clearance: Radius
+Construction details,AssemblyClearanceLength,0.5,Assembly clearance: Length
+Construction details,AssemblyClearanceEndRadius,1,Assembly clearance: EndRadius
+Construction details,AssemblyClearanceWidth,7.2,Assembly clearance: Width
+Construction details,AssemblyClearanceDepth,0.5,Assembly clearance: Depth
+Construction details,AssemblyY2,1.2,Assembly geometry: Y
+Construction details,AssemblyAxis,1,Assembly geometry: Axis
+Construction details,AssemblyEnvelopesClosuretoolenvelopeStrIValue,0.1,Assembly envelopes[ClosureToolEnvelope + str(i): scalar
+Construction details,AssemblyTrayWidth,4,Assembly tray: Width
+Construction details,AssemblyTrayHeight,4,Assembly tray: Height
+Construction details,AssemblyTrayX,2,Assembly tray: X
+Construction details,AssemblyTrayY,2,Assembly tray: Y
+Construction details,AssemblyTrayZ,2,Assembly tray: Z
+Construction details,AssemblyTrayCornerRadius,3,Assembly tray: CornerRadius
+Construction details,AssemblyTrayRimRadius,0.8,Assembly tray: RimRadius
+Construction details,AssemblyCavityDepth,2,Assembly cavity: Depth
+Construction details,AssemblyTrayWidth2,5,Assembly tray: Width
+Construction details,AssemblyTrayDepth,20,Assembly tray: Depth
+Construction details,AssemblyTrayHeight2,5,Assembly tray: Height
+Construction details,AssemblyTrayX2,3,Assembly tray: X
+Construction details,AssemblyTrayY2,1,Assembly tray: Y
+Construction details,AssemblyFrontRadius3,3,Assembly front: Radius
+Construction details,AssemblyFrontLength3,2,Assembly front: Length
+Construction details,AssemblyFrontLength4,7,Assembly front: Length
+Construction details,AssemblyFrontY4,9,Assembly front: Y
+Construction details,AssemblyWingWidth2,3,Assembly wing: Width
+Construction details,AssemblyWingDepth,2,Assembly wing: Depth
+Construction details,AssemblyWingHeight,6,Assembly wing: Height
+Construction details,AssemblyWingX,3,Assembly wing: X
+Construction details,AssemblyWingY,2,Assembly wing: Y
+Construction details,AssemblyWingZ,3,Assembly wing: Z
+Construction details,AssemblyWingCornerRadius,1.2,Assembly wing: CornerRadius
+Construction details,AssemblyWingRimRadius,0.35,Assembly wing: RimRadius
+Construction details,AssemblyBossRadius2,3,Assembly boss: Radius
+Construction details,AssemblyBossLength2,2,Assembly boss: Length
+Construction details,AssemblyBossY,2,Assembly boss: Y
+Construction details,AssemblyBossRadius3,0.4,Assembly boss: Radius
+Construction details,AssemblyTrayRadius,1.15,Assembly tray: Radius
+Construction details,AssemblyTrayLength,4,Assembly tray: Length
+Construction details,AssemblyTrayY3,3,Assembly tray: Y
+Construction details,AssemblyEnvelopesBatterytoolenvelopeStrIValue,1.3,Assembly envelopes[BatteryToolEnvelope + str(i): scalar
+Construction details,AssemblyRootWidth,200,Assembly root: Width
+Construction details,AssemblyRootDepth,0.6,Assembly root: Depth
+Construction details,AssemblyRootHeight,150,Assembly root: Height
+Construction details,AssemblyRootX,100,Assembly root: X
+Construction details,AssemblyRootY,0.6,Assembly root: Y
+Construction details,AssemblyPostWidth,10,Assembly post: Width
+Construction details,AssemblyPostDepth,10,Assembly post: Depth
+Construction details,AssemblyPostHeight,10,Assembly post: Height
+Construction details,AssemblyPostX,5,Assembly post: X
+Construction details,AssemblyPostY,6,Assembly post: Y
+Construction details,AssemblyPostZ,18,Assembly post: Z
+Construction details,AssemblyBaseZValue,1.5,Assembly base_z: scalar
+Construction details,AssemblyOutlineX,7,Assembly outline: X
+Construction details,AssemblyOutlineY,2,Assembly outline: Y
+Construction details,AssemblyOutlineX2,3,Assembly outline: X
+Construction details,AssemblyTabY,2,Assembly tab: Y
+Construction details,AssemblyTabRadius,1,Assembly tab: Radius
+Construction details,AssemblyTabValue,1.999,Assembly tab: scalar
+Construction details,AssemblyTabRadius2,0.3,Assembly tab: Radius
+Construction details,AssemblyTabValue2,0.001,Assembly tab: scalar
+Construction details,AssemblyEnvelopesBatterytoolenvelopeValue,1.3,Assembly envelopes[BatteryToolEnvelope3: scalar
+Construction details,AssemblyTrayWidth3,0.31,Assembly tray: Width
+Construction details,AssemblyTrayDepth2,2,Assembly tray: Depth
+Construction details,AssemblyTrayHeight3,8,Assembly tray: Height
+Construction details,AssemblyTrayX3,0.3,Assembly tray: X
+Construction details,AssemblyTrayX4,0.01,Assembly tray: X
+Construction details,AssemblyBatteryFillet,0.7,Assembly battery: Fillet
+Construction details,AssemblyBatteryDepth,2,Assembly battery: Depth
+Construction details,AssemblyBatteryHeight,2,Assembly battery: Height
+Construction details,AssemblyBatteryY,1,Assembly battery: Y
+Construction details,AssemblyBatteryZ,1,Assembly battery: Z
+Construction details,AssemblyKeeperWidth,2,Assembly keeper: Width
+Construction details,AssemblyKeeperDepth,3,Assembly keeper: Depth
+Construction details,AssemblyKeeperHeight,2,Assembly keeper: Height
+Construction details,AssemblyKeeperY,2,Assembly keeper: Y
+Construction details,AssemblyKeeperRadius,1,Assembly keeper: Radius
+Construction details,AssemblyContactWidth,2,Assembly contact: Width
+Construction details,AssemblyContactDepth,1,Assembly contact: Depth
+Construction details,AssemblyContactHeight,2,Assembly contact: Height
+Construction details,AssemblyContactY,0.1,Assembly contact: Y
+Construction details,AssemblyContactRadius,1,Assembly contact: Radius
+Construction details,AssemblyArmzValue,0.8,Assembly armz: scalar
+Construction details,AssemblyArmWidth,4,Assembly arm: Width
+Construction details,AssemblyArmDepth,11.2,Assembly arm: Depth
+Construction details,AssemblyArmX,2,Assembly arm: X
+Construction details,AssemblyArmY,0.2,Assembly arm: Y
+Construction details,AssemblyWireX,2,Assembly wire: X
+Construction details,AssemblyWireY,8,Assembly wire: Y
+Construction details,AssemblyWireY2,9,Assembly wire: Y
+Construction details,AssemblyHookX,4,Assembly hook: X
+Construction details,AssemblyRearWidth2,4,Assembly rear: Width
+Construction details,AssemblyRearDepth2,8,Assembly rear: Depth
+Construction details,AssemblyRearX2,2,Assembly rear: X
+Construction details,AssemblyRearY,0.2,Assembly rear: Y
+Construction details,AssemblyRearDepth3,3.8,Assembly rear: Depth
+Construction details,AssemblyRearY2,7.8,Assembly rear: Y
+Construction details,AssemblyReliefWidth,6,Assembly relief: Width
+Construction details,AssemblyReliefDepth,9,Assembly relief: Depth
+Construction details,AssemblyReliefHeight,10,Assembly relief: Height
+Construction details,AssemblyReliefX2,3,Assembly relief: X
+Construction details,AssemblyReliefY,2,Assembly relief: Y
+Construction details,AssemblyReliefZ,5,Assembly relief: Z
+Construction details,AssemblyHeightsValue,0.5,Assembly heights: scalar
+Construction details,AssemblyHeightsValue2,1.5,Assembly heights: scalar
+Construction details,AssemblySurfaceY,2,Assembly surface: Y
+Construction details,AssemblyHoleLength,20,Assembly hole: Length
+Construction details,AssemblyHoleBase,15,Assembly hole: Base
+Construction details,AssemblyBedWidth,28,Assembly bed: Width
+Construction details,AssemblyBedDepth,2,Assembly bed: Depth
+Construction details,AssemblyBedX,14,Assembly bed: X
+Construction details,AssemblySolderClearanceWidth,4,Assembly solder_clearance: Width
+Construction details,AssemblySolderClearanceDepth,4.5,Assembly solder_clearance: Depth
+Construction details,AssemblySolderClearanceHeight,2.2,Assembly solder_clearance: Height
+Construction details,AssemblySolderClearanceX2,0.2,Assembly solder_clearance: X
+Construction details,AssemblySolderClearanceY,0.1,Assembly solder_clearance: Y
+Construction details,AssemblySolderClearanceZ,2.1,Assembly solder_clearance: Z
+Construction details,AssemblyRailsWidth,1.2,Assembly rails: Width
+Construction details,AssemblyRailsDepth,1,Assembly rails: Depth
+Construction details,AssemblyRailsHeight,1.45,Assembly rails: Height
+Construction details,AssemblyRailsX,11.8,Assembly rails: X
+Construction details,AssemblyRailsWidth2,2.2,Assembly rails: Width
+Construction details,AssemblyRailsHeight2,1.2,Assembly rails: Height
+Construction details,AssemblyRailsX2,10.8,Assembly rails: X
+Construction details,AssemblyRailsZ,0.25,Assembly rails: Z
+Construction details,AssemblyRailsWidth3,26,Assembly rails: Width
+Construction details,AssemblyRailsHeight3,1,Assembly rails: Height
+Construction details,AssemblyRailsX3,13,Assembly rails: X
+Construction details,AssemblyRailsY,0.3,Assembly rails: Y
+Construction details,AssemblyAntiRattleWidth,0.7,Assembly anti_rattle: Width
+Construction details,AssemblyAntiRattleDepth,0.4,Assembly anti_rattle: Depth
+Construction details,AssemblyAntiRattleHeight,0.25,Assembly anti_rattle: Height
+Construction details,AssemblyAntiRattleX,10.8,Assembly anti_rattle: X
+Construction details,AssemblyAntiRattleY,0.4,Assembly anti_rattle: Y
+Construction details,AssemblyRearLength,7.5,Assembly rear: Length
+Construction details,AssemblyRearZ,7.5,Assembly rear: Z
+Construction details,AssemblyLength2,8,Assembly geometry: Length
+Construction details,AssemblyEnvelopesVibratortoolenvelopeRadius,1,Assembly envelopes[VibratorToolEnvelope1: Radius
+Construction details,AssemblyEnvelopesVibratortoolenvelopeLength,10,Assembly envelopes[VibratorToolEnvelope1: Length
+Construction details,AssemblyEnvelopesVibratortoolenvelopeZ,2,Assembly envelopes[VibratorToolEnvelope1: Z
+Construction details,AssemblyEnvelopesVibratortoolenvelopeLength2,42,Assembly envelopes[VibratorToolEnvelope1: Length
+Construction details,AssemblyEnvelopesVibratortoolenvelopeZ2,12,Assembly envelopes[VibratorToolEnvelope1: Z
+Construction details,AssemblyHapticRadius,1.6,Assembly haptic: Radius
+Construction details,AssemblyHapticLength,1,Assembly haptic: Length
+Construction details,AssemblyHapticZ,0.5,Assembly haptic: Z
+Construction details,AssemblyMotorRadius,5,Assembly motor: Radius
+Construction details,AssemblyMotorLength,2.7,Assembly motor: Length
+Construction details,AssemblyMotorX,5,Assembly motor: X
+Construction details,AssemblyHeaderWidth,14,Assembly header: Width
+Construction details,AssemblyHeaderDepth,7.8,Assembly header: Depth
+Construction details,AssemblyHeaderHeight,5.3,Assembly header: Height
+Construction details,AssemblyHeaderX2,14,Assembly header: X
+Construction details,AssemblyHeaderY,3.9,Assembly header: Y
+Construction details,AssemblyHeaderWidth2,3.5,Assembly header: Width
+Construction details,AssemblyHeaderDepth2,6.5,Assembly header: Depth
+Construction details,AssemblyHeaderHeight2,1.8,Assembly header: Height
+Construction details,AssemblyHeaderY2,3.25,Assembly header: Y
+Construction details,AssemblyHeaderZ,1.8,Assembly header: Z
+Construction details,AssemblyDriverWidth,2,Assembly driver: Width
+Construction details,AssemblyDriverDepth,3,Assembly driver: Depth
+Construction details,AssemblyDriverHeight,1,Assembly driver: Height
+Construction details,AssemblyDriverX,2,Assembly driver: X
+Construction details,AssemblyDriverY,5,Assembly driver: Y
+Construction details,AssemblyRedPoints,5,Assembly red: Points
+Construction details,AssemblyRedPoints2,4,Assembly red: Points
+Construction details,AssemblyRedPoints3,0.5,Assembly red: Points
+Construction details,AssemblyRedPoints4,1,Assembly red: Points
+Construction details,AssemblyRedPoints5,7,Assembly red: Points
+Construction details,AssemblyRedPoints6,3,Assembly red: Points
+Construction details,AssemblyRedPoints7,0.4,Assembly red: Points
+Construction details,AssemblyRedRadius,0.25,Assembly red: Radius
+Construction details,AssemblyBluePoints,5,Assembly blue: Points
+Construction details,AssemblyBluePoints2,4.5,Assembly blue: Points
+Construction details,AssemblyBluePoints3,0.5,Assembly blue: Points
+Construction details,AssemblyBluePoints4,1,Assembly blue: Points
+Construction details,AssemblyBluePoints5,8,Assembly blue: Points
+Construction details,AssemblyBluePoints6,3,Assembly blue: Points
+Construction details,AssemblyBluePoints7,4,Assembly blue: Points
+Construction details,AssemblyBluePoints8,0.4,Assembly blue: Points
+Construction details,AssemblyBlueRadius,0.25,Assembly blue: Radius
+Construction details,AssemblyGuideRadius,0.1,Assembly guide: Radius
+Construction details,AssemblyGuideLength,110,Assembly guide: Length
+Construction details,AssemblyGuideY,10,Assembly guide: Y
+Construction details,AssemblyPoints,11.1,Assembly geometry: Points
+Construction details,AssemblyPoints2,8.199999999999999,Assembly geometry: Points
+Construction details,AssemblyPoints3,17.4,Assembly geometry: Points
+Construction details,AssemblyPoints4,11,Assembly geometry: Points
+Construction details,AssemblyPoints5,42,Assembly geometry: Points
+Construction details,AssemblyPoints6,21.4,Assembly geometry: Points
+Construction details,AssemblyRadius,1.1,Assembly geometry: Radius
+Construction details,AssemblyBpValue,11.2,Assembly bp: scalar
+Construction details,AssemblyBpValue2,6.8,Assembly bp: scalar
+Construction details,AssemblyBpValue3,0.6,Assembly bp: scalar
+Construction details,AssemblyBpValue4,0.5,Assembly bp: scalar
+Construction details,AssemblySpValue,11.2,Assembly sp: scalar
+Construction details,AssemblySpValue2,6.5,Assembly sp: scalar
+Construction details,AssemblySpValue3,24.5,Assembly sp: scalar
+Construction details,AssemblySpValue4,33.5,Assembly sp: scalar
+Construction details,AssemblySpValue5,17.5,Assembly sp: scalar
+Construction details,AssemblySpValue6,34.5,Assembly sp: scalar
+Construction details,AssemblySpValue7,0.2,Assembly sp: scalar
+Construction details,AssemblyWiresHapticwireStrIPoints,18.7,Assembly wires[HapticWire + str(i): Points
+Construction details,AssemblyWiresHapticwireStrIPoints2,13,Assembly wires[HapticWire + str(i): Points
+Construction details,AssemblyWiresHapticwireStrIPoints3,27,Assembly wires[HapticWire + str(i): Points
+Construction details,AssemblyWiresHapticwireStrIPoints4,17,Assembly wires[HapticWire + str(i): Points
+Construction details,AssemblyWiresHapticwireStrIPoints5,24,Assembly wires[HapticWire + str(i): Points
+Construction details,AssemblyWiresHapticwireStrIPoints6,28,Assembly wires[HapticWire + str(i): Points
+Construction details,AssemblyWiresHapticwireStrIPoints7,16,Assembly wires[HapticWire + str(i): Points
+Construction details,AssemblyWiresHapticwireStrIPoints8,26,Assembly wires[HapticWire + str(i): Points
+Construction details,AssemblyWiresHapticwireStrIPoints9,2,Assembly wires[HapticWire + str(i): Points
+Construction details,AssemblyWiresHapticwireStrIRadius,0.5,Assembly wires[HapticWire + str(i): Radius
+Construction details,AssemblySleeveRadius,1.85,Assembly sleeve: Radius
+Construction details,AssemblySleeveLength,2,Assembly sleeve: Length
+Construction details,AssemblySleeveX,2,Assembly sleeve: X
+Construction details,AssemblySleeveRadius2,0.45,Assembly sleeve: Radius
+Construction details,AssemblyResultWidth,10,Assembly result: Width
+Construction details,AssemblyResultDepth,10,Assembly result: Depth
+Construction details,AssemblyResultHeight,10,Assembly result: Height
+Construction details,AssemblyResultX,5,Assembly result: X
+Construction details,AssemblyResultY,6,Assembly result: Y
+Construction details,AssemblyResultZ,18,Assembly result: Z
+Buttons,EarGuideRadius2,3.5,Ear guide: Radius
+Buttons,EarGuideLength2,2,Ear guide: Length
+Buttons,EarShRadius,1,Ear sh: Radius
+Buttons,EarOpeningRadius,1,Ear opening: Radius
+Buttons,EarOpeningLength,3,Ear opening: Length
+USB,USBLiningWidth,9.800000000000001,USB lining: Width
+USB,USBLiningDepth,8,USB lining: Depth
+USB,USBLiningHeight,4.1,USB lining: Height
+USB,USBLiningX,4.9,USB lining: X
+USB,USBLiningY,8,USB lining: Y
+USB,USBLiningZ,2.05,USB lining: Z
+USB,USBLiningCornerRadius,1.9,USB lining: CornerRadius
+USB,USBNutY2,1.6,USB nut: Y
+Construction details,AssemblyWidth,200,Assembly body_volume: Width
+Construction details,AssemblyDepth,200,Assembly body_volume: Depth
+Construction details,AssemblyHeight,150,Assembly body_volume: Height
+Construction details,AssemblyX2,100,Assembly body_volume: X
+Construction details,AssemblyY3,80,Assembly body_volume: Y
+Construction details,AssemblyLinerRadius,2,Assembly liner: Radius
+Construction details,AssemblyLinerLength,6,Assembly liner: Length
+Construction details,AssemblyLinerY,0.8,Assembly liner: Y
+Construction details,AssemblyLugRadius2,3,Assembly lug: Radius
+Construction details,AssemblyLugLength2,2.5,Assembly lug: Length
+Construction details,AssemblyFrontRadius5,1.15,Assembly front: Radius
+Construction details,AssemblyFrontLength5,3,Assembly front: Length
+Construction details,AssemblyFrontY5,1,Assembly front: Y
+Construction details,AssemblyBossRadius4,3.3,Assembly boss: Radius
+Construction details,AssemblyBossLength3,6,Assembly boss: Length
+Construction details,AssemblyBossEndRadius,1,Assembly boss: EndRadius
+Construction details,AssemblyBossWidth,6.6,Assembly boss: Width
+Construction details,AssemblyBossDepth,6,Assembly boss: Depth
+Construction details,AssemblyCrownRadius,3,Assembly crown: Radius
+Construction details,AssemblyCrownLength,2,Assembly crown: Length
+Construction details,AssemblyCrownLength2,0.6,Assembly crown: Length
+Construction details,AssemblyCrownY,0.6,Assembly crown: Y
+Construction details,AssemblyBatteryWidth,1,Assembly battery: Width
+Construction details,AssemblyBatteryX2,1,Assembly battery: X
+Construction details,AssemblyCupWidth,4,Assembly cup: Width
+Construction details,AssemblyCupDepth,20,Assembly cup: Depth
+Construction details,AssemblyCupHeight,4,Assembly cup: Height
+Construction details,AssemblyCupRadius,2,Assembly cup: Radius
+Construction details,AssemblyCupDepth2,22,Assembly cup: Depth
+Construction details,AssemblyCupY,1,Assembly cup: Y
+Construction details,AssemblySeatWidth,4,Assembly seat: Width
+Construction details,AssemblySeatDepth,1,Assembly seat: Depth
+Construction details,AssemblySeatHeight,4,Assembly seat: Height
+Construction details,AssemblySeatRadius,2,Assembly seat: Radius
+Construction details,AssemblySeatWidth2,1.6,Assembly seat: Width
+Construction details,AssemblySeatDepth2,2,Assembly seat: Depth
+Construction details,AssemblySeatHeight2,1.6,Assembly seat: Height
+Construction details,AssemblySeatY,0.5,Assembly seat: Y
+Construction details,AssemblySeatRadius2,0.8,Assembly seat: Radius
+Construction details,AssemblyKeeperWidth2,4,Assembly keeper: Width
+Construction details,AssemblyKeeperDepth2,1.6,Assembly keeper: Depth
+Construction details,AssemblyKeeperHeight2,4,Assembly keeper: Height
+Construction details,AssemblyKeeperY2,1.6,Assembly keeper: Y
+Construction details,AssemblyKeeperRadius2,2,Assembly keeper: Radius
+Construction details,AssemblyContactWidth2,0.1,Assembly contact: Width
+Construction details,AssemblyContactHeight2,0.1,Assembly contact: Height
+Construction details,AssemblyContactRadius2,0.05,Assembly contact: Radius
+Construction details,AssemblyLowerLipWidth,2.3,Assembly lower_lip: Width
+Construction details,AssemblyLowerLipDepth,1,Assembly lower_lip: Depth
+Construction details,AssemblyLowerLipHeight,1,Assembly lower_lip: Height
+Construction details,AssemblyLowerLipX,13,Assembly lower_lip: X
+Construction details,AssemblyLowerLipZ,1,Assembly lower_lip: Z
+Construction details,AssemblyTrayRadius2,0.9,Assembly tray: Radius
+Vibrator,HapticPCBLength,23,"Assembly (hx, hd): scalar"
+Vibrator,HapticPCBWidth,21,"Assembly (hx, hd): scalar"
+Vibrator,HapticHoleEdgeOffset,2.8,Assembly hole_x: scalar
+Buttons,EarWidthRadius,5.6,Ear bun: RadiusX
+Buttons,EarDepthRadius,3.7,Ear bun: RadiusY
+Buttons,EarHeight,5.2,Ear bun: RadiusZ
+Buttons,EarSocketRadius,1.65,Ear cap: Radius
+Buttons,EarSocketDepth,2.3,Ear cap: Length
+Buttons,EarEntryRadius,1.8,Ear cap: BaseRadius
+Buttons,EarEntryDepth,0.4,Ear cap: Length
+Buttons,EarBaseStandOff,0.6,Ear mechanism: Z
+Buttons,EarRecessFloorInset,0.8,Ear mechanism: Z
+Buttons,EarRecessRadiusX,5.9,Ear m.A11: scalar
+Buttons,EarRecessRadiusY,4,Ear m.A22: scalar
+Buttons,ButtonActuatorOriginRadius,23.9,Ear tip: X
+Buttons,ButtonActuatorY,7.8,Ear tip: Y
+Buttons,ButtonLeftTipExtension,0.8509830764,Ear tip_z: scalar
+Buttons,ButtonRightTipExtension,0.9083346406,Ear tip_z: scalar
+Buttons,ButtonStemRadius,1.6,Ear stem: Radius
+Buttons,ButtonFlangeRadius,2.6,Ear stem: Radius
+Buttons,ButtonFlangeThickness,1,Ear stem: Length
+Vibrator,HapticHolePitch,15.4,Measured vibrator hole centre spacing
+Buttons,ButtonTargetStroke,0.6,Checked inward stroke; physical switch test required
+Fasteners,ThreadRootOverlap,0.04,Helical ridge overlap into screw core
+Battery,BatteryLength,44,Measured wrapped maximum length
+Battery,BatteryHeight,30.0,Conservative user width; photo approximately 28–29
+Battery,BatteryThickness,6.5,Measured wrapped maximum thickness
+Battery,BatteryClearance,0.5,Clearance per side before soft pads
+Battery,BatteryY,20.0,Battery front face behind board
+Battery,BatteryZ,23.0,Central battery position restored for R07
+Buttons,ButtonFlangeZ,1,ButtonFlangeZ
+Buttons,ButtonGuideRadius,3.5,ButtonGuideRadius
+Buttons,ButtonGuideStart,2,ButtonGuideStart
+Buttons,EarRecessDepth,3,EarRecessDepth
+Battery,BatteryStrapSlotZOffset,4,BatteryStrapSlotZOffset
+Battery,BatteryStrapOuterMargin,2,BatteryStrapOuterMargin
+Buttons,ButtonRestGap,0.2,Nominal measured gap from stem tip to supplied switch
+Buttons,ButtonOutwardTestMid,0.4,Intermediate guide float check
+Buttons,ButtonOutwardFloat,0.8,Outward guide float from nominal position
+Preview layout,PreviewFrontOffset,55,Exploded-view front carrier separation
+Preview layout,PreviewBoardOffset,35,Exploded-view board separation
+Preview layout,PreviewRearOffset,25,Exploded-view rear casing separation
+Preview layout,PreviewSpeakerOffset,40,Exploded-view speaker separation
+Preview layout,PreviewBatteryOffset,10,Exploded-view battery module separation
+Preview layout,PreviewHapticLift,12,Exploded-view vibrator lift
+Enclosure and reference geometry,ClosureAngleDegrees,15.42216131873867,"Front closure screw angle above horizontal, mirrored left/right"
+Battery,BatteryWireBend1X,-18,Wire centreline routing coordinate
+Battery,BatteryWireBend2X,-24,Wire centreline routing coordinate
+Battery,BatteryWireBend2Y,15,Wire centreline routing coordinate
+Battery,BatteryWireBend3X,-24,Wire centreline routing coordinate
+Battery,BatteryWireBend3Y,17,Wire centreline routing coordinate
+Battery,BatteryWireBend4X,-23,Wire centreline routing coordinate
+Battery,BatteryWireBend4Y,24,Wire centreline routing coordinate
+Speaker,SpeakerWireBend1X,-18,Wire centreline routing coordinate
+Speaker,SpeakerWireBend2Y,16,Wire centreline routing coordinate
+Speaker,SpeakerWireBend3X,-30,Wire centreline routing coordinate
+Speaker,SpeakerWireBend3Y,21,Wire centreline routing coordinate
+Speaker,SpeakerWireBend4X,-30,Wire centreline routing coordinate
+Speaker,SpeakerWireBend4Y,30,Wire centreline routing coordinate
+Speaker,SpeakerWireBend5X,-20,Wire centreline routing coordinate

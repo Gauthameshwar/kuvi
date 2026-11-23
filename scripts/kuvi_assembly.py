@@ -140,30 +140,13 @@ def geometry(p):
     cup = profile(pcw + p['AssemblyCupWidth'], p['AssemblyCupDepth'], pch + p['AssemblyCupHeight'], sy, cr + sc + p['AssemblyCupRadius']).cut(profile(pcw, p['AssemblyCupDepth2'], pch, sy - p['AssemblyCupY'], cr + sc)).common(outer)
     seat = profile(pcw + p['AssemblySeatWidth'], p['AssemblySeatDepth'], pch + p['AssemblySeatHeight'], sy + sd, cr + sc + p['AssemblySeatRadius']).cut(profile(sw - p['AssemblySeatWidth2'], p['AssemblySeatDepth2'], sl - p['AssemblySeatHeight2'], sy + sd - p['AssemblySeatY'], cr - p['AssemblySeatRadius2'])).common(outer)
     rear = union([rear, cup, seat])
-    keeper = profile(pcw + p['AssemblyKeeperWidth2'], p['AssemblyKeeperDepth2'], pch + p['AssemblyKeeperHeight2'], sy - p['AssemblyKeeperY2'], cr + sc + p['AssemblyKeeperRadius2']).cut(profile(sw - p['AssemblyKeeperWidth'], p['AssemblyKeeperDepth'], sl - p['AssemblyKeeperHeight'], sy - p['AssemblyKeeperY'], cr - p['AssemblyKeeperRadius']))
-    contact = profile(sw - p['AssemblyContactWidth2'], sr, sl - p['AssemblyContactHeight2'], sy, cr - p['AssemblyContactRadius2']).cut(profile(sw - p['AssemblyContactWidth'], sr + p['AssemblyContactDepth'], sl - p['AssemblyContactHeight'], sy - p['AssemblyContactY'], cr - p['AssemblyContactRadius']))
-    keeper = keeper.fuse(contact).removeSplitter()
-    clip_t = p['SpeakerClipThickness']
-    clip_gap = p['SpeakerClipClearance']
-    for sign in (-1, 1):
-        armz = sz + sl / 2 + p['AssemblyArmzValue']
-        hookz = armz + clip_t
-        hook_h = clip_gap + p['SpeakerClipHook']
-        arm_z = armz if sign > 0 else 2 * sz - armz - clip_t
-        hook_z = hookz if sign > 0 else 2 * sz - hookz - hook_h
-        arm = box(p['AssemblyArmWidth'], p['AssemblyArmDepth'], clip_t, -p['AssemblyArmX'], sy - p['AssemblyArmY'], arm_z)
-        base = armz + clip_t if sign > 0 else 2 * sz - armz - clip_t
-        peak = base + sign * hook_h
-        wire = Part.makePolygon([V(-p['AssemblyWireX'], sy + p['AssemblyWireY'], base), V(-p['AssemblyWireX'], sy + p['AssemblyWireY'], peak), V(-p['AssemblyWireX'], sy + p['AssemblyWireY2'], base), V(-p['AssemblyWireX'], sy + p['AssemblyWireY'], base)])
-        hook = Part.Face(wire).extrude(V(p['AssemblyHookX'], 0, 0))
-        keeper = union([keeper, arm, hook])
-        slot_z = armz - clip_gap if sign > 0 else 2 * sz - (armz + clip_t + clip_gap)
-        rear = rear.cut(box(p['AssemblyRearWidth2'] + 2 * clip_gap, p['AssemblyRearDepth2'], clip_t + 2 * clip_gap, -p['AssemblyRearX2'] - clip_gap, sy - p['AssemblyRearY'], slot_z))
-        recess_z = slot_z if sign > 0 else slot_z - hook_h
-        rear = rear.cut(box(p['AssemblyRearWidth2'] + 2 * clip_gap, p['AssemblyRearDepth3'], clip_t + 2 * clip_gap + hook_h, -p['AssemblyRearX2'] - clip_gap, sy + p['AssemblyRearY2'], recess_z))
-    relief = box(p['AssemblyReliefWidth'], p['AssemblyReliefDepth'], p['AssemblyReliefHeight'], -sw / 2 - p['AssemblyReliefX2'], sy - p['AssemblyReliefY'], sz - p['AssemblyReliefZ'])
+    # Open pocket: no keeper, hooks, latch slots or thin captive beams.
+    # The shoulder sets insertion depth; the side notch clears the physical lead.
+    relief = rounded_rect_y(p['AssemblyReliefWidth'], p['AssemblyReliefDepth'],
+                            p['AssemblyReliefHeight'], -sw / 2 - p['AssemblyReliefX2'],
+                            sy - p['AssemblyReliefY'], sz - p['AssemblyReliefZ'],
+                            p['SpeakerLeadReliefRadius'])
     rear = rear.cut(relief)
-    keeper = keeper.cut(relief)
     speaker = rounded_rect_y(sw, st, sl, -sw / 2, sy + sr, sz - sl / 2, cr, p['SpeakerRimRadius'])
     pitch = p['GrillePitch']
     hole_centres = []
@@ -218,6 +201,7 @@ def geometry(p):
     for sign in (-1, 1):
         guide, stem, cap, pocket, info = mechanism(sign, p)
         guide = guide.common(cyl(entry_radius - p['AssemblyGuideRadius'], p['AssemblyGuideLength'], 0, -p['AssemblyGuideY'], cz))
+        guide = guide.fuse(info['support'].common(outer)).removeSplitter()
         front = front.fuse(guide).cut(pocket)
         rear = rear.cut(guide).cut(pocket)
         buttons.append(stem)
@@ -225,12 +209,14 @@ def geometry(p):
     microphones = []
     for sign in (-1, 1):
         microphones.append(tube_path([(sign * p['AssemblyPoints'], p['AssemblyPoints2'], cz - p['AssemblyPoints3']), (sign * p['AssemblyPoints'], p['AssemblyPoints4'], cz - p['AssemblyPoints3']), (sign * p['AssemblyPoints5'], p['AssemblyPoints4'], cz - p['AssemblyPoints6'])], p['AssemblyRadius']))
-    mic = Part.makeCompound(microphones)
+    # Acoustic ports pierce the enclosure skin only. The schematic sound paths
+    # must never drill through mounting lugs, posts, guides or other supports.
+    mic = Part.makeCompound(microphones).common(skin)
     front = front.cut(mic)
     rear = rear.cut(mic)
     from kuvi_usb import extension
     front, rear, usb_parts = extension(p, front, rear, outer)
-    rear = rear.cut(keeper).removeSplitter()
+    rear = rear.removeSplitter()
     wires = {}
     for off, color in ((-0.65, 'Black'), (0.65, 'Red')):
         bp = [(p['BatteryWireBend1X'], p['AssemblyBpValue'], cz - p['AssemblyBpValue2']), (p['BatteryWireBend2X'], p['BatteryWireBend2Y'], cz - p['AssemblyBpValue2']), (p['BatteryWireBend3X'], p['BatteryWireBend3Y'], bz + bh - 2), (p['BatteryWireBend4X'], p['BatteryWireBend4Y'], bz + bh - 1), (-bl / 2 - p['AssemblyBpValue3'], by + bt / 2, bz + bh + p['AssemblyBpValue4'])]
@@ -242,7 +228,7 @@ def geometry(p):
         wires['HapticWire' + str(i)] = tube_path([(p['AssemblyWiresHapticwireStrIPoints'], p['AssemblyWiresHapticwireStrIPoints2'], cz + off), (-p['AssemblyWiresHapticwireStrIPoints3'], p['AssemblyWiresHapticwireStrIPoints4'], p['AssemblyWiresHapticwireStrIPoints5']), (-p['AssemblyWiresHapticwireStrIPoints6'], p['AssemblyWiresHapticwireStrIPoints6'], p['AssemblyWiresHapticwireStrIPoints7']), (-p['AssemblyWiresHapticwireStrIPoints8'], hy + off, hz + pcb_t + p['AssemblyWiresHapticwireStrIPoints9'])], p['AssemblyWiresHapticwireStrIRadius'])
     sleeve = cyl(p['AssemblySleeveRadius'], p['AssemblySleeveLength'], -sw / 2 - p['AssemblySleeveX'], sy + sr + st / 2, sz, (1, 0, 0))
     sleeve = sleeve.makeFillet(p['AssemblySleeveRadius2'], [e for e in sleeve.Edges if type(e.Curve).__name__ == 'Circle'])
-    result = {'FrontCarrier': front, 'RearCasing': rear, 'BatteryTray': tray, 'Battery': battery, 'SpeakerLeadSleeve': sleeve, 'Speaker': speaker, 'SpeakerKeeper': keeper, 'HapticAntiRattlePads': anti_rattle, 'HapticPCB': haptic, 'HapticMotor': motor, 'HapticHeader': header, 'HapticDriver': driver, 'HapticMotorLeadRed': red, 'HapticMotorLeadBlue': blue, 'ButtonLeft': buttons[0], 'ButtonRight': buttons[1], 'ButtonCapLeft': button_caps[0], 'ButtonCapRight': button_caps[1], 'MicrophoneDucts': mic, 'AntennaKeepout': box(p['AssemblyResultWidth'], p['AssemblyResultDepth'], p['AssemblyResultHeight'], -p['AssemblyResultX'], p['AssemblyResultY'], cz + p['AssemblyResultZ'])}
+    result = {'FrontCarrier': front, 'RearCasing': rear, 'BatteryTray': tray, 'Battery': battery, 'SpeakerLeadSleeve': sleeve, 'Speaker': speaker, 'HapticAntiRattlePads': anti_rattle, 'HapticPCB': haptic, 'HapticMotor': motor, 'HapticHeader': header, 'HapticDriver': driver, 'HapticMotorLeadRed': red, 'HapticMotorLeadBlue': blue, 'ButtonLeft': buttons[0], 'ButtonRight': buttons[1], 'ButtonCapLeft': button_caps[0], 'ButtonCapRight': button_caps[1], 'MicrophoneDucts': mic, 'AntennaKeepout': box(p['AssemblyResultWidth'], p['AssemblyResultDepth'], p['AssemblyResultHeight'], -p['AssemblyResultX'], p['AssemblyResultY'], cz + p['AssemblyResultZ'])}
     for prefix, items in [('BoardScrew', board_screws), ('BatteryMountScrew', battery_screws), ('ClosureScrew', closure_screws), ('HapticScrew', haptic_screws)]:
         result.update({prefix + str(i): s for i, s in enumerate(items, 1)})
     result.update(wires)

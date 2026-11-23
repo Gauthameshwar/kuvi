@@ -16,3 +16,5 @@ Screw listing supplied by user: https://shopee.sg/product/1336943680/52156709853
 Images are archived supplier/user references, not newly authored manufacturing drawings.
 
 Ear/button cap styling: [user sketch, 2026-11-05](source-models/bun-ear-cap-sketch.png). Flat-bottomed bun with front elliptical scoop and separate stem socket.
+
+Following the 2026-11-23 printability review, the active model uses an open insert-fit speaker pocket instead of the trapped keeper and thin latch features.

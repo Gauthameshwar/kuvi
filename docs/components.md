@@ -24,12 +24,14 @@ The visible self-tapping thread pitch/root profile is estimated because the sell
 
 ## Current fits
 
+Microphone openings pierce only the enclosure skin. Their illustrative acoustic paths do not cut through the Waveshare mounting lugs or internal supports.
+
 - Casing lip: 0.35 per-side clearance, nominal 3 axial depth; seam gap 0.25. Closure centres X±29/Z42. Upper battery mount Z64.7.
-- Speaker: 0.25 per-side clearance, 0.30 front recess and 0.15 axial allowance. Keeper has a matching contact rim. No gasket.
+- Speaker: open 30.55 × 20.50 pocket, R5.15 corners, 7.40 seat depth and 0.30 front recess. Nominal per-side clearance is 0.15. A 4.30-high rounded side notch clears the Ø3.7 lead. No keeper, latch or gasket. Check printed retention; the allowance does not guarantee friction across printers.
 The battery strap/pads are physical assembly items; the current snapshot does not draw them as separate reference solids.
 
 - Vibrator: flat insertion with underside-contact channel; full right upper ledge, open connector side, relieved 1-thick lower left lip. Keep the right anti-rattle pad as compressible material.
-- Buttons: Ø3.20 stem, Ø3.60 running bore; stepped Ø6.2 disc relief. Cap socket Ø3.30 with tapered entry. Nominal switch gap 0.20 and checked target inward stroke 0.60. Clearance-fit cap retention needs a coupon; adjust the socket if loose.
+- Buttons: solid backing joins each guide to the front wall; the stem bore and disc travel pocket remain clear. Ø3.20 stem, Ø3.60 running bore; Ø5.8 retaining disc in stepped Ø6.2 relief, matching the stem's 0.20 radial running clearance. Cap socket Ø3.30 with tapered entry. Nominal switch gap 0.20 and checked target inward stroke 0.60. Clearance-fit cap retention needs a coupon; adjust the socket if loose.
 - Ear shape: 11.2 × 7.4 × 5.2, elliptical front scoop and separate bottom socket. Exposed stem is 0.6; casing recess permits inward movement.
 
-Cable bend radius R3, unspecified connector moulding details, soft pads and clip elasticity remain fit-test assumptions. The static switch geometry does not specify safe electrical overtravel.
+Cable bend radius R3, unspecified connector moulding details, soft pads and speaker-pocket retention remain fit-test assumptions. The static switch geometry does not specify safe electrical overtravel.

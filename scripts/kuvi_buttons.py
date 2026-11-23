@@ -21,6 +21,10 @@ def mechanism(sign, p):
     flange_z = p['ButtonFlangeZ']
     flange_pocket = c(p['EarFlangePocketRadius'], p['EarFlangePocketLength'], p['EarFlangePocketZ'])
     guide = guide.cut(bore).cut(flange_pocket)
+    # Solid backing toward the front wall; no cavity below the guide sleeve.
+    support = box(2 * p['ButtonSupportHalfWidth'], p['ButtonSupportFrontReach'],
+                  distance - p['EarGuideLength2'], -p['ButtonSupportHalfWidth'],
+                  -p['ButtonSupportFrontReach'], p['EarGuideZ'])
     tip_z = -p['ButtonLeftTipExtension'] if sign < 0 else -p['ButtonRightTipExtension']
     stem = union([c(p['ButtonStemRadius'], distance + p['EarStemLength'] - tip_z, tip_z), c(p['ButtonFlangeRadius'], p['ButtonFlangeThickness'], flange_z)])
 
@@ -46,10 +50,10 @@ def mechanism(sign, p):
     opening.translate(V(0, 0, distance - p['EarRecessFloorInset']))
     pocket = bore.fuse(flange_pocket).fuse(opening)
     place = App.Placement(tip, App.Rotation(V(0, 0, p['EarPlaceZ']), axis))
-    for s in (guide, stem, cap, pocket):
+    for s in (guide, stem, cap, pocket, support):
         s.Placement = place.multiply(s.Placement)
     return guide, stem, cap, pocket, {
         'radial_running_clearance': p['EarBoreRadius']-p['ButtonStemRadius'],
         'cap_diametral_clearance': 2*(p['EarSocketRadius']-p['ButtonStemRadius']),
         'rest_cap_gap': p['EarBaseStandOff'], 'travel':p['ButtonTargetStroke'],
-        'tip_local_z':tip_z}
+        'tip_local_z':tip_z, 'support':support}

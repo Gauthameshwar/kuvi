@@ -13,10 +13,6 @@
       "valid": true,
       "count": 1
     },
-    "SpeakerKeeper": {
-      "valid": true,
-      "count": 1
-    },
     "ButtonLeft": {
       "valid": true,
       "count": 1
@@ -177,16 +173,42 @@
       "hits": []
     }
   ],
+  "speaker_insertion": [
+    {
+      "offset": -20,
+      "overlap_mm3": 0.0
+    },
+    {
+      "offset": -10,
+      "overlap_mm3": 0.0
+    },
+    {
+      "offset": -5,
+      "overlap_mm3": 0.0
+    },
+    {
+      "offset": -2,
+      "overlap_mm3": 0.0
+    },
+    {
+      "offset": -1,
+      "overlap_mm3": 0.0
+    },
+    {
+      "offset": 0,
+      "overlap_mm3": 0.0
+    }
+  ],
   "buttons": [
     {
       "side": "Left",
-      "rest_gap": 0.20000000001873264,
-      "gap_after_0_2_press": 3.552713678800501e-15,
+      "rest_gap": 0.20000000001872578,
+      "gap_after_0_2_press": 7.32410687763558e-15,
       "hits": []
     },
     {
       "side": "Right",
-      "rest_gap": 0.20000000002654952,
+      "rest_gap": 0.2000000000265436,
       "gap_after_0_2_press": 0.0,
       "hits": []
     }
@@ -194,7 +216,7 @@
   "nuts": [
     {
       "seated_overlap": 0.0,
-      "rotation_interference": 0.20119502180720292
+      "rotation_interference": 0.20119502180720303
     },
     {
       "seated_overlap": 0.0,
@@ -211,10 +233,6 @@
       "nonmanifold": false
     },
     "BatteryTray": {
-      "closed": true,
-      "nonmanifold": false
-    },
-    "SpeakerKeeper": {
       "closed": true,
       "nonmanifold": false
     },
@@ -240,6 +258,7 @@
     "no_part_collisions": true,
     "pcb_insertion": true,
     "front_insertion": true,
+    "speaker_insertion": true,
     "tool_access": true,
     "button_reach": true,
     "nut_fit": true,
@@ -248,9 +267,32 @@
   },
   "ok": true,
   "scope": "Saved geometry, native booleans, static switch reach and sampled assembly. Flexible wire intersections are routing advisories, not fixed-location fit failures. Physical print fits, switch operation, cable bend limits and strength require testing.",
-  "battery_tray_wire_groove_fix": {
-    "restored_volume_mm3": 9.830153098804075,
-    "removed_volume_mm3": 0.0,
-    "wire_paths": "illustrative only; no subtraction"
+  "speaker_mount": {
+    "type": "open insert-fit pocket",
+    "width_mm": 30.55,
+    "height_mm": 20.5,
+    "seat_depth_mm": 7.4,
+    "per_side_clearance_mm": 0.15,
+    "lead_notch_height_mm": 4.3,
+    "keeper_removed": true,
+    "continuous_insertion_overlap_mm3": 0.0
+  },
+  "button_guide_backing": {
+    "sides": "both",
+    "added_front_volume_mm3": 344.3829887600003,
+    "bore_and_disc_relief_preserved": true
+  },
+  "button_retaining_disc": {
+    "diameter_mm": 5.8,
+    "pocket_diameter_mm": 6.2,
+    "radial_clearance_mm": 0.20000000000000018,
+    "thickness_mm": 1.0
+  },
+  "microphone_ports": {
+    "restored_front_support_mm3": 20.823111174800943,
+    "restored_inside_old_acoustic_paths_mm3": 20.82311117480095,
+    "front_port_overlap_mm3": 0.0,
+    "rear_port_overlap_mm3": 0.0,
+    "port_tools_volume_mm3": 15.35626084206491
   }
 }

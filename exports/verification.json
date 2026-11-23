@@ -3,27 +3,23 @@
   "units": "mm",
   "step": {
     "file": "kuvi.step",
-    "objects": 59,
-    "solids": 713,
+    "objects": 58,
+    "solids": 712,
     "valid": true,
-    "relative_volume_difference": 0.00013882072767420887,
+    "relative_volume_difference": 0.0001398181883384469,
     "max_bounds_difference_mm": 2.1316282072803006e-13
   },
   "printables": {
     "FrontCarrier": {
-      "triangles": 16052,
+      "triangles": 14566,
       "closed": true
     },
     "RearCasing": {
-      "triangles": 84020,
+      "triangles": 83538,
       "closed": true
     },
     "BatteryTray": {
       "triangles": 24820,
-      "closed": true
-    },
-    "SpeakerKeeper": {
-      "triangles": 1132,
       "closed": true
     },
     "ButtonLeft": {

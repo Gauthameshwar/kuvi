@@ -12,9 +12,9 @@ Enclosure and reference geometry,GlassClearance,0.3,Radial glass clearance
 Battery,BatteryRetainerGap,1,Non-compressing thickness allowance
 Speaker,SpeakerWidth,20.2,Short side of photographed rectangular speaker
 Speaker,SpeakerThickness,7.1,User measured thickness
-Speaker,SpeakerRecess,0.3,Speaker front face recessed behind keeper mounting plane
-Speaker,SpeakerClearance,0.25,"Per-side mounting clearance, provisional"
-Speaker,SpeakerCavityDepth,7.55,0.3 front recess plus 7.1 housing plus 0.15 axial allowance
+Speaker,SpeakerRecess,0.3,Speaker front face recessed behind open pocket mouth
+Speaker,SpeakerClearance,0.15,Per-side insert-fit allowance; verify on physical print
+Speaker,SpeakerCavityDepth,7.4,0.3 front recess plus 7.1 housing; seated against rear shoulder
 Speaker,SpeakerY,38,Speaker rear-directed axis start
 Speaker,SpeakerZ,34,Speaker centre height
 Enclosure and reference geometry,GrilleDiameter,2.4,"Acoustic hole diameter, provisional"
@@ -33,9 +33,6 @@ Enclosure and reference geometry,ClosureRadius,30.08321791298265,Symmetric front
 Enclosure and reference geometry,ClosureScrewLength,8,Plastic closure screw length under head
 Battery,BatteryMountX,28.5,Tray mounting screws outboard of cell and strap
 Battery,BatteryMountScrewLength,8,Plastic tray screw length under head
-Speaker,SpeakerClipThickness,0.8,Replaceable clip beam; material/print test required
-Speaker,SpeakerClipClearance,0.3,Provisional clip slot clearance
-Speaker,SpeakerClipHook,0.4,Nominal elastic clip deflection / engagement
 Enclosure and reference geometry,DriverShaftReach,42,Straight shaft length before handle
 Enclosure and reference geometry,DriverHandleDiameter,18,Illustrative precision screwdriver handle diameter
 USB,USBWireWidth,7.5,Supplier image
@@ -315,37 +312,12 @@ Construction details,AssemblyBatteryDepth,2,Assembly battery: Depth
 Construction details,AssemblyBatteryHeight,2,Assembly battery: Height
 Construction details,AssemblyBatteryY,1,Assembly battery: Y
 Construction details,AssemblyBatteryZ,1,Assembly battery: Z
-Construction details,AssemblyKeeperWidth,2,Assembly keeper: Width
-Construction details,AssemblyKeeperDepth,3,Assembly keeper: Depth
-Construction details,AssemblyKeeperHeight,2,Assembly keeper: Height
-Construction details,AssemblyKeeperY,2,Assembly keeper: Y
-Construction details,AssemblyKeeperRadius,1,Assembly keeper: Radius
-Construction details,AssemblyContactWidth,2,Assembly contact: Width
-Construction details,AssemblyContactDepth,1,Assembly contact: Depth
-Construction details,AssemblyContactHeight,2,Assembly contact: Height
-Construction details,AssemblyContactY,0.1,Assembly contact: Y
-Construction details,AssemblyContactRadius,1,Assembly contact: Radius
-Construction details,AssemblyArmzValue,0.8,Assembly armz: scalar
-Construction details,AssemblyArmWidth,4,Assembly arm: Width
-Construction details,AssemblyArmDepth,11.2,Assembly arm: Depth
-Construction details,AssemblyArmX,2,Assembly arm: X
-Construction details,AssemblyArmY,0.2,Assembly arm: Y
-Construction details,AssemblyWireX,2,Assembly wire: X
-Construction details,AssemblyWireY,8,Assembly wire: Y
-Construction details,AssemblyWireY2,9,Assembly wire: Y
-Construction details,AssemblyHookX,4,Assembly hook: X
-Construction details,AssemblyRearWidth2,4,Assembly rear: Width
-Construction details,AssemblyRearDepth2,8,Assembly rear: Depth
-Construction details,AssemblyRearX2,2,Assembly rear: X
-Construction details,AssemblyRearY,0.2,Assembly rear: Y
-Construction details,AssemblyRearDepth3,3.8,Assembly rear: Depth
-Construction details,AssemblyRearY2,7.8,Assembly rear: Y
 Construction details,AssemblyReliefWidth,6,Assembly relief: Width
 Construction details,AssemblyReliefDepth,9,Assembly relief: Depth
-Construction details,AssemblyReliefHeight,10,Assembly relief: Height
+Construction details,AssemblyReliefHeight,4.3,Speaker side lead opening: 3.7 lead plus 0.6 total clearance
 Construction details,AssemblyReliefX2,3,Assembly relief: X
 Construction details,AssemblyReliefY,2,Assembly relief: Y
-Construction details,AssemblyReliefZ,5,Assembly relief: Z
+Construction details,AssemblyReliefZ,2.15,Half-height of centred speaker lead opening
 Construction details,AssemblyHeightsValue,0.5,Assembly heights: scalar
 Construction details,AssemblyHeightsValue2,1.5,Assembly heights: scalar
 Construction details,AssemblySurfaceY,2,Assembly surface: Y
@@ -516,14 +488,6 @@ Construction details,AssemblySeatDepth2,2,Assembly seat: Depth
 Construction details,AssemblySeatHeight2,1.6,Assembly seat: Height
 Construction details,AssemblySeatY,0.5,Assembly seat: Y
 Construction details,AssemblySeatRadius2,0.8,Assembly seat: Radius
-Construction details,AssemblyKeeperWidth2,4,Assembly keeper: Width
-Construction details,AssemblyKeeperDepth2,1.6,Assembly keeper: Depth
-Construction details,AssemblyKeeperHeight2,4,Assembly keeper: Height
-Construction details,AssemblyKeeperY2,1.6,Assembly keeper: Y
-Construction details,AssemblyKeeperRadius2,2,Assembly keeper: Radius
-Construction details,AssemblyContactWidth2,0.1,Assembly contact: Width
-Construction details,AssemblyContactHeight2,0.1,Assembly contact: Height
-Construction details,AssemblyContactRadius2,0.05,Assembly contact: Radius
 Construction details,AssemblyLowerLipWidth,2.3,Assembly lower_lip: Width
 Construction details,AssemblyLowerLipDepth,1,Assembly lower_lip: Depth
 Construction details,AssemblyLowerLipHeight,1,Assembly lower_lip: Height
@@ -548,7 +512,7 @@ Buttons,ButtonActuatorY,7.8,Ear tip: Y
 Buttons,ButtonLeftTipExtension,0.8509830764,Ear tip_z: scalar
 Buttons,ButtonRightTipExtension,0.9083346406,Ear tip_z: scalar
 Buttons,ButtonStemRadius,1.6,Ear stem: Radius
-Buttons,ButtonFlangeRadius,2.6,Ear stem: Radius
+Buttons,ButtonFlangeRadius,2.9,Retaining disc radius; 0.20 radial clearance inside R3.10 pocket
 Buttons,ButtonFlangeThickness,1,Ear stem: Length
 Vibrator,HapticHolePitch,15.4,Measured vibrator hole centre spacing
 Buttons,ButtonTargetStroke,0.6,Checked inward stroke; physical switch test required
@@ -589,3 +553,6 @@ Speaker,SpeakerWireBend3Y,21,Wire centreline routing coordinate
 Speaker,SpeakerWireBend4X,-30,Wire centreline routing coordinate
 Speaker,SpeakerWireBend4Y,30,Wire centreline routing coordinate
 Speaker,SpeakerWireBend5X,-20,Wire centreline routing coordinate
+Speaker,SpeakerLeadReliefRadius,1,Rounded corners on open side lead notch
+Buttons,ButtonSupportHalfWidth,3.5,Solid guide backing half-width; same on both sides
+Buttons,ButtonSupportFrontReach,7.2,Guide backing reach toward front wall from actuator plane

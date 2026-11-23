@@ -4,7 +4,7 @@ from pathlib import Path
 from itertools import combinations
 import FreeCAD as App
 from kuvi_model import ROOT, V, parameters
-PRINTED = ['FrontCarrier','RearCasing','BatteryTray','SpeakerKeeper','ButtonLeft','ButtonRight','ButtonCapLeft','ButtonCapRight']
+PRINTED = ['FrontCarrier','RearCasing','BatteryTray','ButtonLeft','ButtonRight','ButtonCapLeft','ButtonCapRight']
 COMPONENTS = ['Battery','Speaker','HapticPCB','HapticHeader','HapticMotor','USBMaleHousing','USBMaleHeatShrink','USBFemaleHousing','USBFemalePlate','USBFemaleHeatShrink','USBRibbon']
 def overlap(a,b):
     if not a.BoundBox.intersect(b.BoundBox):return 0.
@@ -26,7 +26,7 @@ def _native(shapes, p):
         moving=[('HapticPCB',shapes['HapticPCB']),('HapticMotor',shapes['HapticMotor']),('UndersideContacts',shapes['HapticHeader'].Solids[-1])]
         for a,original in moving:
             s=original.translated(V(0,dy,0))
-            for b in ['RearCasing','Speaker','SpeakerKeeper']:
+            for b in ['RearCasing','Speaker']:
                 v=overlap(s,shapes[b])
                 if v>.02:hits.append([a,b,round(v,4)])
         r['slider_samples'].append({'dy':dy,'front_up_degrees':-angle,'hits':hits})
@@ -73,6 +73,13 @@ def check_shapes(shapes, output=None, mesh=True):
             vol=overlap(shapes[name].translated(V(0,offset,0)), shapes['RearCasing'])
             if vol>.02: hits.append([name,vol])
         r['front_insertion'].append({'offset':offset,'hits':hits})
+    # Straight insertion toward the rear seat; reverse path provides removal.
+    speaker = shapes['Speaker']
+    r['speaker_insertion'] = []
+    for offset in (-20, -10, -5, -2, -1, 0):
+        moved = speaker.translated(V(0, offset, 0))
+        vol = overlap(moved, shapes['RearCasing'])
+        r['speaker_insertion'].append({'offset': offset, 'overlap_mm3': vol})
     r['buttons']=[]
     for side,sign,ref in [('Left',-1,'SwitchB'),('Right',1,'SwitchA')]:
         axis=V(sign*p['EarAxisX'],0,p['EarAxisZ']);stem=shapes['Button'+side];switch=shapes[ref]
@@ -102,6 +109,7 @@ def check_shapes(shapes, output=None, mesh=True):
       'no_part_collisions':not r['collisions'],
       'pcb_insertion':all(not x['hits'] for x in r['slider_samples']),
       'front_insertion':all(not x['hits'] for x in r['front_insertion']),
+      'speaker_insertion':all(x['overlap_mm3'] < .001 for x in r['speaker_insertion']),
       'tool_access':all(not x for x in r['tool_access'].values()),
       'button_reach':all(abs(x['rest_gap']-p['ButtonRestGap'])<.01 and x['gap_after_0_2_press']<.01 and not x['hits'] for x in r['buttons']),
       'nut_fit':all(x['seated_overlap']<.001 and x['rotation_interference']>.001 for x in r['nuts']),

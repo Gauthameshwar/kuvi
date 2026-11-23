@@ -1,4 +1,4 @@
-"""Publish the reviewed assembly as STEP and its eight printed parts as STL."""
+"""Publish the reviewed assembly as STEP and its seven printed parts as STL."""
 import json
 from pathlib import Path
 from tempfile import TemporaryDirectory

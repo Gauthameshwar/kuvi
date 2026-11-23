@@ -9,7 +9,7 @@ The enclosure is ready for a fit-test print. Printer/material settings and physi
 ## Ready-to-use files
 
 - [STEP assembly](exports/kuvi.step): separate solid parts for editing in other CAD tools.
-- [Printable STL parts](exports/printables/): eight parts, in millimetres.
+- [Printable STL parts](exports/printables/): seven parts, in millimetres.
 - [Export instructions](exports/README.md): format details and print preparation.
 
 ## Where to start

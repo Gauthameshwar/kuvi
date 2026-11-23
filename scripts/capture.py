@@ -43,6 +43,8 @@ def capture(doc, output=None):
             placement=o.Placement.copy();placement.Base=placement.Base+V(0,dy,dz);o.Placement=placement
         angle();shot('exploded-front');angle(True);shot('exploded-rear')
         reset()
+        for o in features:o.Visibility=o.Name=='RearCasing'
+        view.viewFront();shot('speaker-pocket')
         for o in features:o.Visibility=False
         section=doc.addObject('Part::Feature','CaptureFloorSection')
         section.Shape=doc.RearCasing.Shape.common(box(100,100,15,-50,-20,0));section.ViewObject.ShapeColor=(.9,.9,.9)
